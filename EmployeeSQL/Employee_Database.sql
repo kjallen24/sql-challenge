@@ -89,12 +89,12 @@ WHERE title_id = 'm0001'
 
 --Dept/Employee Information
 SELECT emp_no, first_name, last_name, dept_name
-from dept_emp, employees, departments
+from dept_emp, employees, departments;
 
 --Hercules/ Starts w. B
 SELECT first_name, last_name, sex
 FROM employees
-WHERE first_name = 'Hercules' and last_name like 'B%'
+WHERE first_name = 'Hercules' and last_name like 'B%';
 
 --Sales Employees ONLY
 SELECT emp_no, first_name, last_name, dept_name
