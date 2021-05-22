@@ -96,6 +96,9 @@ SELECT first_name, last_name, sex
 FROM employees
 WHERE first_name = 'Hercules' and last_name like 'B%'
 
+--Sales Employees ONLY
+
+
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
 WHERE last_name like '%a%'
