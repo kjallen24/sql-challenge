@@ -92,7 +92,9 @@ SELECT emp_no, first_name, last_name, dept_name
 from dept_emp, employees, departments
 
 --Hercules/ Starts w. B
-
+SELECT first_name, last_name, sex
+FROM employees
+WHERE 
 
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
