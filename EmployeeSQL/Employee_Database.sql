@@ -106,7 +106,9 @@ SELECT emp_no, first_name, last_name, dept_name
 FROM employees, dept_emp, departments
 WHERE dept_no = 'd007' or 'd005'
 
-
+--Count by LastName, Desc Order
+SELECT COUNT(DISTINCT last_name) desc
+FROM employees
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
 WHERE last_name like '%a%'
