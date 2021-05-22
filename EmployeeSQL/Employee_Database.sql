@@ -97,7 +97,9 @@ FROM employees
 WHERE first_name = 'Hercules' and last_name like 'B%'
 
 --Sales Employees ONLY
-
+SELECT emp_no, first_name, last_name, dept_name
+FROM employees, dept_emp, departments
+WHERE dept_no = 'd007'
 
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
