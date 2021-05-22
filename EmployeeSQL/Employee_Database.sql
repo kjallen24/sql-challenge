@@ -101,6 +101,12 @@ SELECT emp_no, first_name, last_name, dept_name
 FROM employees, dept_emp, departments
 WHERE dept_no = 'd007'
 
+--Sales & Development Employees ONLY
+SELECT emp_no, first_name, last_name, dept_name
+FROM employees, dept_emp, departments
+WHERE dept_no = 'd007' or 'd005'
+
+
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
 WHERE last_name like '%a%'
