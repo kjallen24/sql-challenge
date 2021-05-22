@@ -82,7 +82,7 @@ SELECT first_name, last_name, hire_date
 from employees
 WHERE YEAR (hire_date) = 1986
 
---
+--Dept Manager
 
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
