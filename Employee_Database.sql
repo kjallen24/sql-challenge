@@ -73,18 +73,6 @@ REFERENCES "departments" ("dept_no");
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 
---details of each employee
-SELECT emp_no, first_name, last_name, sex, salary
-from employees, salary;
-
---employees hired in 1986
-SELECT first_name, last_name, hire_date
-from employees
-WHERE YEAR (hire_date) = 1986
-
---
-
-
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
 WHERE last_name like '%a%'
 order by last_name desc, first_name 
