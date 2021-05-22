@@ -89,7 +89,8 @@ WHERE title_id = 'm0001'
 
 --Dept/Employee Information
 SELECT emp_no, first_name, last_name, dept_name
-from
+from dept_emp, employees, departments
+
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
 WHERE last_name like '%a%'
