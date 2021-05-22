@@ -1,7 +1,7 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
-
+--creating tables for each of the 6 CSVs
 CREATE TABLE "titles" (
     "title_id" VARCHAR   NOT NULL,
     "title" VARCHAR   NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE "salaries" (
         "emp_no"
      )
 );
-
+-- Creating Constraints and Connections between the CSVs
 ALTER TABLE "employees" ADD CONSTRAINT "fk_employees_emp_title_id" FOREIGN KEY("emp_title_id")
 REFERENCES "titles" ("title_id");
 
@@ -72,6 +72,8 @@ REFERENCES "departments" ("dept_no");
 
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
+
+-- Unable to load in CSVs. PGAdmin4 prompted error.
 
 --details of each employee
 SELECT emp_no, first_name, last_name, sex, salary
