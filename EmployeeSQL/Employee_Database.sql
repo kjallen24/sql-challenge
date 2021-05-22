@@ -83,9 +83,9 @@ from employees
 WHERE YEAR (hire_date) = 1986
 
 --Dept Manager
-SELECT first_name, last_name, hire_date
-from employees
-WHERE YEAR (hire_date) = 1986
+SELECT dept_no, dept_name, emp_no, last_name, first_name
+from departments, dept_manager, employees, titles
+WHERE title_id = 'm0001'
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
 WHERE last_name like '%a%'
