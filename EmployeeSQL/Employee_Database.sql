@@ -94,7 +94,7 @@ from dept_emp, employees, departments
 --Hercules/ Starts w. B
 SELECT first_name, last_name, sex
 FROM employees
-WHERE 
+WHERE first_name = 'Hercules'
 
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
