@@ -99,7 +99,7 @@ WHERE first_name = 'Hercules' and last_name like 'B%'
 --Sales Employees ONLY
 SELECT emp_no, first_name, last_name, dept_name
 FROM employees, dept_emp, departments
-WHERE dept_no = 'd007'
+WHERE dept_no = 'd007';
 
 --Sales & Development Employees ONLY
 SELECT emp_no, first_name, last_name, dept_name
