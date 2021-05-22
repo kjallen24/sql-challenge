@@ -91,6 +91,9 @@ WHERE title_id = 'm0001'
 SELECT emp_no, first_name, last_name, dept_name
 from dept_emp, employees, departments
 
+--Hercules/ Starts w. B
+
+
 
 SELECT WHERE YEAR (hire_date) = 1986 and MONTH (hire_date) = 6
 WHERE last_name like '%a%'
